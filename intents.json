@@ -1,15 +1,96 @@
 {"intents":[
   { "tag": "saudacao",
-    "patterns":["Ola","Opa","Oi", "tudo bem"],
-    "responses": ["Oi","Olá"]
+    "patterns":["Ola","Opa","Oi", "tudo bem", "E aí, beleza?", "Oi, como vai?", "Bom dia!", "Boa tarde!", "Boa noite!"],
+    "responses": ["Oi, sobre o que você gostaria de falar?","Olá, sobre o que você gostaria de falar?"]
   },
   { "tag": "despedida",
-    "patterns":["valeu","tchau","Obrigado","tks"],
-    "responses": ["Até breve","Falou"]
+    "patterns":["valeu","tchau","Obrigado","tks","Até logo","Até mais","Nos vemos em breve","Até a próxima","A gente se fala","Cuide-se!"],
+    "responses": ["Espero ter ajudado. Até breve","Espero ter ajudado. Tchau."]
   },
-  { "tag": "data_prova",
-    "patterns":["Quando sera a prova?","A prova será em que dia?"],
-    "responses": ["no dia 26"]
+  { "tag": "definicao_pipe",
+  "patterns":["O que é o PIPE?","Como funciona o PIPE?", "Gostaria de mais informações sobre o PIPE", "Pode me explicar o que é o PIPE?", "Qual é a definição do PIPE?", "O que significa PIPE?", "Fale mais sobre o PIPE", "Gostaria de saber sobre o PIPE"],
+  "responses": ["O Programa Pesquisa Inovativa em Pequenas Empresas da FAPESP destina-se a apoiar a execução de pesquisa científica e tecnológica em pequenas empresas no Estado de São Paulo. Seus objetivos são apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica e o desenvolvimento empresarial, aumentar a competitividade das pequenas empresas, possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica e contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado de trabalho empresarial criando uma cultura permanente de inovação."]
+  },
+  { "tag": "etapas_pipe",
+  "patterns":["Quais são as etapas do PIPE?","Quais são as etapas do programa?", "Quais são as fase do PIPE?", "Como funciona o processo do PIPE?", "Quais as etapas envolvidas no PIPE?", "Explique as fases do PIPE", "Como o PIPE é dividido?"],
+  "responses": ["a) Fase 1: é destinada à verificação da viabilidade técnico-científica da proposta, (duração de até 9 meses e orçamento de até R$ 300.000, mais Reserva Técnica e Benefícios Complementares);\nb) Fase 2: destina-se à execução da pesquisa propriamente dita (duração de até 24 meses e orçamento de até R$ 1.500.000, mais Reserva Técnica e Benefícios Complementares);\nc) PIPE Invest: Aceleração da chegada ao mercado de Projetos da Fase 2, quando houver terceira parte interessada (duração de até 24 meses e orçamento de até R$ 1.500.000);\nd) Fase 3: desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela pequena empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE."]
+  },
+  { "tag": "fase_pipe",
+  "patterns":["A fase 1 é obrigatória?","Posso ir direto para a fase 2?", "Posso pular a fase 1?", "A fase 1 é necessária?", "Qual é a importância da fase 1?", "É possível iniciar pela fase 2?", "Preciso começar pela fase 1?"],
+  "responses": ["A empresa pode submeter uma proposta à Fase 2 Direta. Nesse caso é fundamental demonstrar que a viabilidade técnica da pesquisa já foi demonstrada; para tanto é fundamental apresentar um ótimo documento de “Justificativa para a Fase 2 Direta”."]
+  },
+  { "tag": "projeto_pipe",
+  "patterns":["O projeto de pesquisa tem que ser feito na empresa?", "Preciso fazer o projeto na empresa?", "Posso realizar o projeto fora da empresa?", "O projeto tem que ser feito internamente?", "O projeto de pesquisa precisa ser realizado na sede da empresa?"],
+  "responses": ["Sim, obrigatoriamente. O PIPE destina-se a apoiar a execução de pesquisa EM pequenas empresas sediadas no Estado de São Paulo, conforme está explicitado nas normas do programa. Para acessar as normas do programa, clique no link: https://fapesp.br/pipe/normas/#1"]
+  },
+  { "tag": "preciso_pipe",
+  "patterns":["Preciso já ter a empresa para solicitar o PIPE?", "Preciso ter empresa para o PIPE?", "Posso aplicar sem ter empresa?", "É obrigatório ter uma empresa para o PIPE?", "Posso abrir uma empresa para participar do PIPE?", "É necessário já ter a empresa para submeter uma proposta?"],
+  "responses": ["Não. A FAPESP analisa propostas de empresas ainda não constituídas. Empresas startup ainda não constituídas legalmente são incentivadas a submeter. Nos casos em que a proposta for recomendada, o proponente deverá então abrir formalmente a empresa antes da concessão da proposta."]
+  },
+  { "tag": "submissao_pipe",
+  "patterns":["O que é uma empresa para fins de submissão ao PIPE?"],
+  "responses": ["É uma empresa com até 250 funcionários, independentemente do seu faturamento. A FAPESP considera empresa as sociedades empresárias previstas no Código Civil, o empresário individual, o microempreendedor individual (MEI), a sociedade limitada unipessoal e as sociedades simples. Associações, fundações, institutos e cooperativas não podem sediar um PIPE da FAPESP."]
+  },
+  { "tag": "proposta_pipe",
+  "patterns":["Quando posso submeter uma proposta ao PIPE?", "Quando posso enviar uma proposta para o PIPE?", "Qual é o período para submeter uma proposta ao PIPE?", "Qual é o prazo para enviar propostas ao PIPE?", "Posso submeter uma proposta ao PIPE agora?", "Quando as propostas do PIPE são aceitas?"],
+  "responses": ["As propostas para o PIPE Fase 1, Fase 2 e PIPE Invest são recebidas em fluxo contínuo durante todo o ano."]
+  },
+  { "tag": "prioritarias_pipe",
+  "patterns":["Há áreas prioritárias no programa PIPE?", "Existem áreas preferenciais no PIPE?", "O PIPE prioriza alguma  área?", "Quais são as áreas foco do PIPE?", "Há setores prioritários no PIPE?", "Algumas áreas são favorecidas no PIPE?"],
+  "responses": ["Não. O PIPE visa a apoiar pesquisas promissoras, com potencial de inovação, em qualquer área do conhecimento."]
+  },
+  { "tag": "produto_pipe",  
+  "patterns":["Há áreas prioritárias no programa PIPE?", "Quais tiposd e produto são aceitos no PIPE?", "O PIPE é voltado para quais pordutos?", " Há um tipo específico de produto no PIPE?", "O PIPE apoia que tipo de produto?", "Há restrições sobre os produtos no PIPE?"],
+  "responses": ["Não. O PIPE visa a apoiar pesquisas promissoras, com potencial de inovação, em qualquer área do conhecimento."]
+  },
+  { "tag": "objetivo_pipe",
+    "patterns":["Qual o objetivo do PIPE?","Quais os objetivos do PIPE?", "Para que serve o PIPE?", "Qual é a finalidade do PIPE?", "Quais são os objetivos principais do PIPE?", "Qual é o foco do PIPE?", "O que o PIPE busca alcançar?"],
+    "responses": ["São objetivos do PIPE:\n1. Apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica, promover o desenvolvimento empresarial e aumentar a competitividade das pequenas empresas.\n2. Incrementar a contribuição da pesquisa para o desenvolvimento econômico e social.\n3. Induzir o aumento do investimento privado em pesquisa tecnológica.\n4. Possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica.\n5. Contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado."]
+  },
+  { 
+    "tag": "analise_pipe",
+    "patterns":["Como é feita a análise das propostas do PIPE?", "Qual é o processo de análise do PIPE?", "Como é feita a análise no PIPE?", "Quais são os critérios de avaliação do PIPE?", "Como as propostas são avaliadas no PIPE?", "Qual é o processo ded avaliação do PIPE?", "Como é a análise das propostas do PIPE?"],
+    "responses": ["As propostas submetidas ao PIPE são analisadas em dois critérios principais: 1) Mérito técnico-científico da proposta e a qualificação da equipe; 2) Relevância da proposta para o desenvolvimento da empresa, do produto ou processo e sua inserção no mercado. Cada proposta é avaliada por consultores ad hoc especializados na área de conhecimento específica do projeto."]
+  },
+  { 
+    "tag": "participacao_pipe",
+    "patterns":["Quem pode participar do PIPE?","Quais são os critérios de participação no PIPE?", "Quem pode se inscrever no PIPE?", "Como posso participar do PIPE?", "Quem está elegível para o PIPE?", "Quais são os critérios de participação no PIPE?"],
+    "responses": ["Podem participar do PIPE pequenas empresas com até 250 empregados, localizadas no Estado de São Paulo. Além disso, os projetos devem ter como objetivo o desenvolvimento de um produto, processo ou serviço inovador."]
+  },
+  { 
+    "tag": "cronograma_pipe",
+    "patterns":["Qual é o cronograma do PIPE?","Como é o cronograma de submissão ao PIPE?", "Quando posso submeter ao PIPE?", "Qual é o calendário do PIPE?", "O PIPE tem datas específicas?", "Qual é a data de submissão ao PIPE?", "Quando abre a submissão ao PIPE?"],
+    "responses": ["As propostas para o PIPE podem ser submetidas a qualquer momento, pois o programa opera em fluxo contínuo. Não há um prazo específico para submissão."]
+  },
+  { 
+    "tag": "normas_pipe",
+    "patterns":["Quais são as normas do PIPE?","Como acessar as normas do PIPE?", "Onde encontro as normas do PIPE?", "Como posso acessar as regras do PIPE?", "Quais são os regulamentos do PIPE?", "O PIPE tem normas específicas?", "Onde posso ler as normas do PIPE?"],
+    "responses": ["As normas detalhadas para a submissão de propostas ao PIPE podem ser acessadas no site oficial da FAPESP, diretamente na seção do PIPE. Essas normas incluem informações sobre elegibilidade, critérios de avaliação, procedimentos de submissão e outros requisitos essenciais."]
+  },
+  { 
+    "tag": "documentos_pipe",
+    "patterns":["Quais documentos são exigidos para o PIPE?","Documentos necessários para submeter ao PIPE?", "Quais são os documentos exigidos para o PIPE?", "O que preciso enviar para o PIPE?", "Que documentação é necessária para o PIPE?", "Quais papéis são necessários para o PIPE?", "O que é exigido na submissão ao PIPE?"],
+    "responses": ["Os documentos exigidos para a submissão de uma proposta ao PIPE incluem o formulário online preenchido, currículo dos pesquisadores envolvidos, plano de pesquisa detalhado, orçamento e, se aplicável, a justificativa para a Fase 2 Direta. Outros documentos podem ser solicitados conforme as especificações da chamada."]
+  },
+  { 
+    "tag": "requisitos_pipe",
+    "patterns":["Quais são os requisitos para participar do PIPE?","O que é necessário para submeter ao PIPE?", "O que preciso para participar do PIPE?", "Quais são os requisitos para submeter ao PIPE?", "O que é necessário para o PIPE?", "Quais critérios preciso atender para o PIPE?", "Quais são as exigências para o PIPE?"],
+    "responses": ["Os principais requisitos para participar do PIPE incluem a necessidade de a empresa estar sediada no Estado de São Paulo, ter até 250 funcionários, e a proposta de pesquisa deve visar o desenvolvimento de um produto, processo ou serviço inovador. Além disso, a empresa deve cumprir todas as normas e orientações da FAPESP."]
+  },
+  { 
+    "tag": "aprovacao_pipe",
+    "patterns":["O que acontece após a aprovação da proposta PIPE?","Proposta PIPE aprovada, e agora?", "O que acontece se minha proposta for aprovada?", "O que faço após a aprovação no PIPE?", "Qual é o próximo passo após a aprovação do PIPE?", "O que acontece depois da aprovação da proposta?", "Qual é o procedimento após a aprovação no PIPE?"],
+    "responses": ["Após a aprovação da proposta no PIPE, a empresa receberá o Termo de Outorga e será responsável pela execução do projeto conforme o plano de trabalho aprovado. A empresa deve também cumprir todas as exigências de prestação de contas e relatórios periódicos à FAPESP."]
+  },
+  { 
+    "tag": "resultados_pipe",
+    "patterns":["Quais são os resultados esperados no PIPE?","O que se espera alcançar com o PIPE?", "Quais são os resultados esperados no PIPE?", "O que se espera com o PIPE?", "Quais são os benefícios do PIPE?", "O que o PIPE pode alcançar?", "Qual é o objetivo final do PIPE?"],
+    "responses": ["Os resultados esperados no PIPE incluem o desenvolvimento de inovações tecnológicas que possam ser comercializadas e que contribuam para o aumento da competitividade da empresa. O programa visa também a geração de propriedade intelectual e o fortalecimento da pesquisa e desenvolvimento nas pequenas empresas."]
+  },
+  { 
+    "tag": "concessao_pipe",
+    "patterns":["Como ocorre a concessão do PIPE?","Concessão de recursos do PIPE?", "Como recebo os recursos do PIPE?", "Como é feita a concessão no PIPE?", "Quando recebo o dinheiro do PIPE?", "O que acontece após a concessão do PIPE?", "Como funciona a concessão no PIPE?"],
+    "responses": ["A concessão de recursos do PIPE ocorre após a assinatura do Termo de Outorga, momento em que os recursos financeiros são disponibilizados para a empresa de acordo com o cronograma estabelecido no plano de trabalho. A empresa deve utilizar os recursos estritamente para as atividades previstas na proposta."]
   }
 ]
 }

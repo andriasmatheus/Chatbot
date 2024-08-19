@@ -28,7 +28,7 @@ class ChatBot:
     lemmatizer = WordNetLemmatizer()
 
     def createModel(self):
-        nltk.download('punkt')
+        nltk.download('punkt_tab')
         nltk.download('wordnet')
         nltk.download('omw-1.4')
 
@@ -91,9 +91,9 @@ class ChatBot:
         # Create model - 3 layers. First layer 128 neurons, second layer 64 neurons and 3rd output layer contains number of neurons
         # equal to number of intents to predict output intent with softmax
         model = Sequential()
-        model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
+        model.add(Dense(256, input_shape=(len(train_x[0]),), activation='relu'))
         model.add(Dropout(0.5))
-        model.add(Dense(64, activation='relu'))
+        model.add(Dense(128, activation='relu'))
         model.add(Dropout(0.5))
         model.add(Dense(len(train_y[0]), activation='softmax'))
 
@@ -102,7 +102,7 @@ class ChatBot:
         model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
         # fitting and saving the model
-        hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+        hist = model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=5, verbose=1)
         model.save('chatbot_model.h5', hist)
 
         self.model = model

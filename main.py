@@ -11,17 +11,20 @@ print("Bem vindo ao Chatbot do PIPE")
 
 pergunta = input("Como posso te ajudar?\n")
 resposta, intencao = myChatBot.chatbot_response(pergunta)
-print(resposta)
-#print(resposta + "   ["+intencao[0]['intent']+"]")
+if(float(intencao[0]['probability']) < 0.92 and intencao[0]['intent']!="despedida"):
+    print("Desculpe, não entendi.")
+else:
+    print("Resposta:" + resposta)
 
-num_pergunta = 0
 while (intencao[0]['intent']!="despedida"):
-    if(num_pergunta == 0):
-        num_pergunta += 1
+    if(intencao[0]['intent'] == "saudacao" and float(intencao[0]['probability']) >= 0.92):
         pergunta = input()
     else:
         pergunta = input("Posso lhe ajudar com algo a mais?\n")
     resposta, intencao = myChatBot.chatbot_response(pergunta)
-    print(resposta)
+    if(float(intencao[0]['probability']) < 0.92):
+        print("Desculpe, não entendi.")
+    else:
+        print("Resposta:" + resposta)
 
 print("Foi um prazer atendê-lo")

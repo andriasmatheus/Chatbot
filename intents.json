@@ -36,12 +36,12 @@
   "responses": ["As propostas para o PIPE Fase 1, Fase 2 e PIPE Invest são recebidas em fluxo contínuo durante todo o ano."]
   },
   { "tag": "prioritarias_pipe",
-  "patterns":["Há áreas prioritárias no programa PIPE?", "Existem áreas preferenciais no PIPE?", "O PIPE prioriza alguma  área?", "Quais são as áreas foco do PIPE?", "Há setores prioritários no PIPE?", "Algumas áreas são favorecidas no PIPE?"],
-  "responses": ["Não. O PIPE visa a apoiar pesquisas promissoras, com potencial de inovação, em qualquer área do conhecimento."]
+  "patterns":["Há áreas prioritárias no programa PIPE?", "Existem áreas preferenciais no PIPE?", "O PIPE prioriza alguma área?", "Há setores prioritários no PIPE?", "Algumas áreas são favorecidas no PIPE?"],
+  "responses": ["Não. O PIPE visa apoiar pesquisas promissoras, com potencial de inovação, em qualquer área do conhecimento."]
   },
   { "tag": "produto_pipe",  
-  "patterns":["Há áreas prioritárias no programa PIPE?", "Quais tiposd e produto são aceitos no PIPE?", "O PIPE é voltado para quais pordutos?", " Há um tipo específico de produto no PIPE?", "O PIPE apoia que tipo de produto?", "Há restrições sobre os produtos no PIPE?"],
-  "responses": ["Não. O PIPE visa a apoiar pesquisas promissoras, com potencial de inovação, em qualquer área do conhecimento."]
+  "patterns":["Quais tipos de produto são aceitos no PIPE?", "O PIPE é voltado para quais produtos?", "O PIPE apoia que tipo de produto?"],
+  "responses": ["O PIPE visa a apoiar pesquisas promissoras, com potencial de inovação, em qualquer área do conhecimento."]
   },
   { "tag": "objetivo_pipe",
     "patterns":["Qual o objetivo do PIPE?","Quais os objetivos do PIPE?", "Para que serve o PIPE?", "Qual é a finalidade do PIPE?", "Quais são os objetivos principais do PIPE?", "Qual é o foco do PIPE?", "O que o PIPE busca alcançar?"],
